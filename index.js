@@ -10,14 +10,17 @@ app.use(bodypaser.urlencoded({ extended: false }));
 app.use(bodypaser.json());
 
 // 路由
-const indexRouter = require('./router/app');
 
 
-app.use('/public', express.static(path.join(__dirname, './static')));
+
+app.use('/', express.static(path.join(__dirname, './static')));
+
+app.get('/', (req, res)=>{
+    res.redirect('./html/index.html')
+});
 
 
-app.use('/', indexRouter);
 
 app.listen(port,()=>{
-  console.log('server start')
+    console.log('server start')
 });
