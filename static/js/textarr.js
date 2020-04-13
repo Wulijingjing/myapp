@@ -188,7 +188,7 @@ let textArr = [
                 text: '项目三：课评系统'
             }, {
                 name: 'li',
-                text: '使用技术栈：element-ui,express,jQuery,Ajax',
+                text: '使用技术栈：bootstrap,express,jQuery,Ajax',
             }, {
                 name: 'li',
                 text: '项目描述：使用express搭建web服务器，使用apidoc编写接口文档，使用Ajax实现页面局部刷新，采用element-ui编写前端页面。'
